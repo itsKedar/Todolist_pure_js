@@ -7,13 +7,40 @@ let fulldate = date.getDate() + month[date.getMonth()] + date.getFullYear();
 document.querySelector(".date").innerHTML=fulldate;
 
 
-addbtn.addEventListener("click", function(){
-  var li = document.createElement("li");
-  var checkbox= document.createElement("input");
-  checkbox.type="checkbox";
+
+textValue.addEventListener("keyup" , function(event){
+  
+   if(event.keyCode===13){
+    var li = document.createElement("li");
   var t = document.createTextNode(textValue.value);
-  li.appendChild(checkbox);
   li.appendChild(t);
   document.querySelector("ul").appendChild(li);
-  textValue.value ="";
+  textValue.value ="";  
+  addbtn.click();
+  }
   });
+
+addbtn.addEventListener("click" , function(){
+  if(textValue.value=="")
+  {
+    textValue.value='';
+  }
+  else{
+    var li = document.createElement("li");
+  var t = document.createTextNode(textValue.value);
+  li.appendChild(t);
+  document.querySelector("ul").appendChild(li);
+  textValue.value ="";  
+  }
+  });
+
+
+
+var list1 = document.querySelector('ul');
+list1.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+  
+  
