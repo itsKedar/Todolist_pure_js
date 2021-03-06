@@ -35,9 +35,7 @@ addbtn.addEventListener("click" , function(){
   });
 
 
-
-var list1 = document.querySelector('ul');
-list1.addEventListener('click', function(ev) {
+list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
