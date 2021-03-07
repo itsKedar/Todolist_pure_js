@@ -1,4 +1,4 @@
 1) should show todays full date
 2) need input 
 3) add button to add in list
-4) on click of checkbox should put a line on list
+4) on click of text should put a line on list
