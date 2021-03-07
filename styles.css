@@ -18,3 +18,35 @@ ul
 {
     cursor: pointer;
 }
+li{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+
+.date{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.863);
+}
+#insert{
+    margin-left: 50px;
+    margin-right: 10px;
+    height: 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 5px 8px;
+    
+}
+
+#add{
+    border-radius: 10px;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    background-color:#e2e7f0;
+}
+body{
+    background-color: #475973;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    
+}
